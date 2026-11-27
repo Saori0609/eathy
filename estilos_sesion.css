@@ -1,0 +1,163 @@
+:root {
+    --verde-oscuro: #28583A;
+    --verde-principal: #4C8564;
+    --verde-claro: #BFDBC5;
+    --crema: #e3e1e1;
+    --blanco:#F2F2F2;
+    --texto-alt:#5A6660;
+    --texto: #3F4742;
+    --gris: #68776a;
+    --verde-gris:#B1C4BA;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--texto);
+    background: linear-gradient( #e3e1e1, #BFDBC5);
+    padding: 10vh;
+    background-attachment: fixed;
+}
+
+.contenedor {
+    display:flex;
+    width: 100%;
+    height: 100%;
+    background:var(--blanco);
+    border-radius: 10px;
+    align-items:center;
+
+}
+
+/*SECCION IZQUIERDA*/
+.seccion-imagen {
+    width: 70vh;
+    height: 70vh;
+    background-image: url("foodsesion.png");
+    background-size: 100%;
+    display: flex;
+    align-items:center;
+    background-repeat: no-repeat round;
+    justify-content: center;
+}
+
+.contenido-imagen {
+    color: var(--verde-principal);
+    max-width: 500px;
+    background:#f2f2f288 ;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #F2F2F2;
+    border-width:5px;
+}
+
+
+.contenido-imagen h1 {
+    font-size: 90px;
+    font-weight: bold;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.contenido-imagen p {
+    font-size: 22px;
+    line-height: 1.5;
+}
+
+/*SECCION DERECHA*/
+.seccion-login {
+    display: flex;
+    padding: 30px;
+    width: 50%;
+    min-height: 6vh;
+    background: var(--crema0);
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario-contenedor {
+    width: 100%;
+    
+}
+
+/*LOGOTIPO*/
+.logo {
+    
+    align-items: center;
+    gap: 7px;
+    margin-bottom: 50px;
+}
+
+.descripcion {
+    color: var(--texto-alt);
+    font-size: 15px;
+    line-height: 1.6;
+    text-align:right;
+}
+
+.logo h2 {
+    color: var(--verde-principal);
+    font-size: 32px;
+}
+
+/*TITULOS*/
+.formulario-contenedor h3 {
+    font-size: 20px;
+    color:var(--texto-alt);
+    margin-bottom: 7px;
+}
+
+/*CAMPOS*/
+.campo {
+    margin-bottom: 23px;
+}
+
+.campo label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 9px;
+    font-size: 14px;
+}
+
+.campo input {
+    width: 100%;
+    padding: 12px;
+
+    border: 1px solid #cdd8ca;
+    border-radius: 10px;
+
+    font-size: 15px;
+    background:#b1c4ba65;
+
+    transition: 0.3;
+}
+
+.campo input:focus {
+    outline: none;
+    border-color: var(--verde-principal);
+    box-shadow: 0 0 0 3px
+        rgba(60, 121, 80, 0.15);
+}
+/*BOTON INICIAR SESION*/
+.btn-login {
+    width: 200px;
+    padding: 16px;
+
+    background: var(--verde-principal);
+    color: var(--blanco);
+
+    border: none;
+    border-radius: 10px;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-login:hover {
+    background: var(--verde-oscuro);
+    box-shadow: 0 5px 15px
+        rgba(40, 88, 58, 0.25);
+}
